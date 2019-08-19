@@ -17,5 +17,4 @@ class Transfer
 
   end
 
-
 end
