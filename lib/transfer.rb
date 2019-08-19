@@ -24,6 +24,8 @@ class Transfer
       if @sender.valid?
 
       else
+
+      end
     end
   end
 
