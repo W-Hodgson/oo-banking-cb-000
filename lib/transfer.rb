@@ -22,7 +22,8 @@ class Transfer
       @status = "complete"
       @transfer_occured = true
       if !@sender.valid?
-
+        @status = "rejected"
+        "Transaction rejected. Please check your account balance."
       end
     end
   end
