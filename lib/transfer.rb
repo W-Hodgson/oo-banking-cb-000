@@ -5,6 +5,6 @@ class Transfer
   def initialize(sender, receiver, status="pending")
     @sender = sender
     @receiver = receiver
-    @status = "pending"
+    @status = status
   end
 end
