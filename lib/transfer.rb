@@ -7,7 +7,7 @@ class Transfer
     @receiver = receiver
     @status = 'pending'
     @amount = amount
-    @transfer_occured = 0
+    @transfer_occured = false
   end
 
   def valid?
@@ -15,6 +15,7 @@ class Transfer
   end
 
   def execute_transaction
+    if @t
     @sender.balance -= amount
     @receiver.balance += amount
     @status = "complete"
